@@ -51,7 +51,7 @@ Image-Gallery/
 
 ## 📸 Preview
 
-![Image Gallery Screenshot](screenshot.png) <!-- Optional, if you add a screenshot -->
+![Image Gallery Screenshot](screenshot.png) 
 
 ---
 

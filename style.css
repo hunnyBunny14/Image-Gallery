@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+/* Designer Given Data */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.wrapper {
+    /* height: 100vh; for footer only */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.container {
+  height: 100%;
+  max-width: 1200px; /* Designer Given Data */
+  margin: 0 auto;
+  padding: 20px; /* Designer Given Data */
+}
+.container h1 {
+  margin: 20px 0; /* Designer Given Data */
+  margin-bottom: 20px; /* Designer Given Data */
+  text-align: center;
+  font-size: 3rem; /* Designer Given Data */
+}
+.gallary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card:hover {
+  cursor: pointer;
+}
+
+.card {
+  width: 32%;
+  position: relative; /* For Overlap the text over it */
+  margin-bottom: 20px; /* Designer Given Data */
+  border-radius: 10px; /* Designer Given Data */
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  filter: grayscale(100%);
+  height: 100%;
+  box-shadow: 0 0 20px #333;
+  object-fit: cover;
+}
+.card:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px #333);
+  transition: 0.3s;
+}
+.card:hover img {
+  filter: grayscale(0%);
+}
+.card figcaption {
+  position: absolute;
+  bottom: 0; /* Designer Given Data */
+  left: 0; /* Designer Given Data */
+  padding: 25px; /* Designer Given Data */
+  width: 100%;
+  height: 20%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
+}
+.card:hover figcaption {
+  opacity: 1;
+  transform: scale(1.03);
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+  background-color: #f4f4f4;
+}
